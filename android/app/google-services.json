@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "953957692494",
+    "project_id": "instacart-33104",
+    "storage_bucket": "instacart-33104.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953957692494:android:a19ec074959211d724bf1f",
+        "android_client_info": {
+          "package_name": "com.example.instacart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKwaFWiOxz7TtKfcIALUab4g9QRePKer0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
