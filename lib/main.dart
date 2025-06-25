@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
-import 'package:instacart/sceens/login_screen.dart';
-import 'package:instacart/sceens/register_page.dart';
 import 'package:instacart/sceens/splash_screen.dart';
 import 'package:instacart/view_model/SliderViewModel.dart';
 import 'package:provider/provider.dart';

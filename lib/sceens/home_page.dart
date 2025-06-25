@@ -1,12 +1,9 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:instacart/colors/colors.dart';
 import 'package:instacart/widgets/HorizontalCardList.dart';
 import 'package:instacart/widgets/HorizontalColorList.dart';
-import 'package:instacart/widgets/HorizontalTransparent.dart';
-
 import '../widgets/AnimatedContentSlider.dart';
 import '../widgets/HorizontalTrendingList.dart';
 
@@ -18,22 +15,7 @@ class DashbordPage extends StatefulWidget {
 }
 
 class _DashbordPageState extends State<DashbordPage> {
-  int _currentIndex = 0;
 
-  final List<Widget> _carouselItems = [
-    Container(
-      color: Colors.red,
-      child: Center(child: Text('Slide 1', style: TextStyle(color: Colors.white, fontSize: 24))),
-    ),
-    Container(
-      color: Colors.green,
-      child: Center(child: Text('Slide 2', style: TextStyle(color: Colors.white, fontSize: 24))),
-    ),
-    Container(
-      color: Colors.blue,
-      child: Center(child: Text('Slide 3', style: TextStyle(color: Colors.white, fontSize: 24))),
-    ),
-  ];
 
   @override
   Widget build(BuildContext context) {
