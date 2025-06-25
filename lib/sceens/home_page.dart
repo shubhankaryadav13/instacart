@@ -7,6 +7,7 @@ import 'package:instacart/widgets/HorizontalCardList.dart';
 import 'package:instacart/widgets/HorizontalColorList.dart';
 import 'package:instacart/widgets/HorizontalTransparent.dart';
 
+import '../widgets/AnimatedContentSlider.dart';
 import '../widgets/HorizontalTrendingList.dart';
 
 class DashbordPage extends StatefulWidget {
@@ -37,7 +38,7 @@ class _DashbordPageState extends State<DashbordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.white,
+      backgroundColor: AppColors.black,
       appBar: AppBar(
         title: Text(
           '𝖨𝗇𝗌𝗍𝖺𝖼𝖺𝗋𝗍',
@@ -61,96 +62,37 @@ class _DashbordPageState extends State<DashbordPage> {
         systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            children: [
-              Container(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            AnimatedContentSlider(),
+            const Text(
+              'Featured Categories',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            const SizedBox(height: 10),
+            const HorizontalColorList(),
+            const SizedBox(height: 10),
+            const HorizontalCardList(),
+            const SizedBox(height: 10),
+            const Text(
+              'Deals Of The Day',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
                 color: Colors.black,
-                child: Column(
-                  children: [
-                    CarouselSlider(
-                      items: _carouselItems,
-                      options: CarouselOptions(
-                        height: 200,
-                        aspectRatio: 16 / 9,
-                        initialPage: 0,
-                        viewportFraction: 1.0,
-                        enableInfiniteScroll: true,
-                        reverse: false,
-                        autoPlay: true,
-                        autoPlayInterval: Duration(seconds: 3),
-                        autoPlayAnimationDuration: Duration(milliseconds: 800),
-                        autoPlayCurve: Curves.fastOutSlowIn,
-                        enlargeCenterPage: true,
-                        enlargeFactor: 0.2,
-                        scrollDirection: Axis.horizontal,
-                        onPageChanged: (index, reason) {
-                          setState(() {
-                            _currentIndex = index;
-                          });
-                        },
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: _carouselItems.asMap().entries.map((entry) {
-                        return Container(
-                          width: 10.0,
-                          height: 10.0,
-                          margin: EdgeInsets.symmetric(horizontal: 4.0),
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: _currentIndex == entry.key
-                                ? Colors.white
-                                : Colors.white.withOpacity(0.4),
-                          ),
-                        );
-                      }).toList(),
-                    ),
-                    SizedBox(height: 10),
-                  ],
-                ),
               ),
-              const Text(
-                'Featured Categories',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              const SizedBox(height: 10),
-              const HorizontalColorList(),
-              const SizedBox(height: 10),
-              const HorizontalCardList(),
-              const SizedBox(height: 10),
-              const Text(
-                'Popular Products',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              const SizedBox(height: 10),
-              HorizontalTransparent(), // grid-based list
-              const SizedBox(height: 20),
-              const Text(
-                'Deals Of The Day',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              const SizedBox(height: 10),
-              const HorizontalTrendingList(),
+            ),
+            const SizedBox(height: 10),
+            const HorizontalTrendingList(),
 
 
-              // Add more widgets below the carousel if needed
-            ],
-          ),
+            // Add more widgets below the carousel if needed
+          ],
         ),
       ),
     );

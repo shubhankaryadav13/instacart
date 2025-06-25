@@ -9,14 +9,14 @@ class HorizontalColorList extends StatelessWidget {
   Widget build(BuildContext context) {
     // List of colors for items
     final List<Color> itemColors = [
-      Color(0xFFfff3eb),
-      Color(0xFFebffee),
-      Color(0xFFffebf1),
-      Color(0xFFfff3eb),
-      Color(0xFFfff3eb),
-      Color(0xFFebffee),
-      Color(0xFFffebf1),
-      Color(0xFFfff3eb),
+      Color(0xFF606360),
+      Color(0xFF606360),
+      Color(0xFF606360),
+      Color(0xFF606360),
+      Color(0xFF606360),
+      Color(0xFF606360),
+      Color(0xFF606360),
+      Color(0xFF606360),
     ];
     return SizedBox(
         height: 160,
@@ -30,7 +30,7 @@ class HorizontalColorList extends StatelessWidget {
               decoration: BoxDecoration(
                 color: itemColors[index], // use color here only
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.green, width: 1),
+                border: Border.all(color: Colors.white, width: 1),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.white54,

@@ -37,10 +37,12 @@ dependencies:
   firebase_core: ^3.14.0
   any: ^0.0.0
   firebase_auth: ^5.6.0
-  provider: any
+  provider: ^6.1.5
   cuberto_bottom_bar: any
   carousel_slider: ^5.1.1
   flutter_rating: ^2.0.2
+  cloud_firestore: ^5.6.9
+  get: ^4.7.2
 
 dev_dependencies:
   flutter_test:
@@ -65,8 +67,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
+    - assets/images/sliders/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

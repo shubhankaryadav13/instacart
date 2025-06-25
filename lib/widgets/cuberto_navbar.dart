@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cuberto_bottom_bar/cuberto_bottom_bar.dart';
-import 'package:instacart/sceens/home_page.dart'; // ensure this path is correct
+import 'package:instacart/sceens/home_page.dart';
+
+import '../sceens/dashbord_another.dart'; // ensure this path is correct
 
 class BottomBarExample extends StatefulWidget {
   @override
@@ -12,7 +14,7 @@ class _BottomBarExampleState extends State<BottomBarExample> {
 
   final List<Widget> _pages = [
     DashbordPage(),
-    Center(child: Text('Search Page')),
+    DashbordAnother(),
     Center(child: Text('Profile Page')),
   ];
 
