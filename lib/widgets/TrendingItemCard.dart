@@ -71,7 +71,7 @@ class TrendingItemCard extends StatelessWidget {
                 height: 140,
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Color(0xFF5B6840),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Column(
@@ -174,7 +174,7 @@ class TrendingItemCard extends StatelessWidget {
       height: 80,
       width: 60,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color(0xFF5B6840),
         borderRadius: BorderRadius.circular(5),
         border: Border.all(color: Colors.white70, width: 1),
         boxShadow: [
@@ -190,14 +190,14 @@ class TrendingItemCard extends StatelessWidget {
         children: [
           Text(value,
               style: TextStyle(
-                  color: Colors.green,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 18)),
+                  fontSize: 20)),
           Text(label,
               style: TextStyle(
-                  color: Colors.black54,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 12)),
+                  fontSize:16)),
         ],
       ),
     );

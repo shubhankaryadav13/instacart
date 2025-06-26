@@ -9,25 +9,25 @@ class HorizontalTransparent extends StatelessWidget {
     ProductItem(
       title: "Everyday Fresh & Clean with Our Products",
       imageUrl: "https://www.pngplay.com/wp-content/uploads/2/Onion-Transparent-Image.png",
-      bgColor: const Color(0xFFFFFFFF),
+      bgColor: const Color(0xFF5B6840),
       rating: 3.5,
     ),
     ProductItem(
       title: "Make your Breakfast Healthy and Easy",
       imageUrl: "https://cdn.accentuate.io/6128703242393/1618586766263/Frobishers_Juice_Orange-(1).png?v=1654507650835",
-      bgColor: const Color(0xFFFFFFFF),
+      bgColor: const Color(0xFF5B6840),
       rating: 4.0,
     ),
     ProductItem(
       title: "The best Organic Products Online",
       imageUrl: "https://www.pngplay.com/wp-content/uploads/8/Vegetable-Transparent-Free-PNG.png",
-      bgColor: const Color(0xFFFFFFFF),
+      bgColor: const Color(0xFF5B6840),
       rating: 2.5,
     ),
     ProductItem(
       title: "The best Organic Products Online food",
       imageUrl: "https://www.pngplay.com/wp-content/uploads/8/Vegetable-Transparent-Free-PNG.png",
-      bgColor: const Color(0xFFFFFFFF),
+      bgColor: const Color(0xFF5B6840),
       rating: 4.5,
     ),
   ];

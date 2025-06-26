@@ -49,6 +49,7 @@ class _BottomBarExampleState extends State<BottomBarExample> {
           tabStyle: CubertoTabStyle.styleNormal, // Use valid style here
           tabColor: Colors.green,
           inactiveIconColor: Colors.grey,
+          barBackgroundColor: Color(0xFF5B6840),
         ),
       ),
     );

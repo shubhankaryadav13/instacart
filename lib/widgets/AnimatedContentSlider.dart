@@ -23,8 +23,8 @@ class AnimatedContentSlider extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     gradient: LinearGradient(
                       colors: [
-                        Color(0xFF4C574C).withOpacity(0.4),
-                        Color(0xFF4C574C).withOpacity(0.85),
+                        Color(0xFF5B6840).withOpacity(0.4),
+                        Color(0xFF5B6840).withOpacity(0.85),
                       ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,

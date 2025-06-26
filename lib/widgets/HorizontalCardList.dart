@@ -11,19 +11,19 @@ class HorizontalCardList extends StatelessWidget {
       ProductItem(
         title: "Everyday Fresh & Clean with Our Products",
         imageUrl: "https://www.pngplay.com/wp-content/uploads/2/Onion-Transparent-Image.png",
-        bgColor: Color(0xFFfff3eb), rating: 0.0,
+        bgColor: Color(0xFF5B6840), rating: 0.0,
       ),
       ProductItem(
           title: "Make your Breakfast Healthy and Easy",
           imageUrl: "https://cdn.accentuate.io/6128703242393/1618586766263/Frobishers_Juice_Orange-(1).png?v=1654507650835",
-          bgColor: Color(0xFFebffee),
+          bgColor: Color(0xFF5B6840),
           rating: 0.0
       ),
 
       ProductItem(
           title: "The best Organic Products Online",
           imageUrl: "https://www.pngplay.com/wp-content/uploads/8/Vegetable-Transparent-Free-PNG.png",
-          bgColor: Color(0xFFffebf1),
+          bgColor: Color(0xFF5B6840),
           rating: 0.0
       ),
     ];
@@ -41,7 +41,7 @@ class HorizontalCardList extends StatelessWidget {
             decoration: BoxDecoration(
               color: item.bgColor,
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.green, width: 1),
+              border: Border.all(color: Colors.white54, width: 1),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black12,
@@ -64,9 +64,9 @@ class HorizontalCardList extends StatelessWidget {
                         Text(
                           item.title,
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                            fontSize: 18,
                           ),
                         ),
                         const SizedBox(height: 8),
@@ -78,21 +78,19 @@ class HorizontalCardList extends StatelessWidget {
                           label: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: const [
-                              Text('Shop Now',style: TextStyle(color: Colors.white),),
-                              SizedBox(width: 8),
-                              Icon(Icons.arrow_forward,color: Colors.white,), // Right-side icon
+                              Text('Shop Now',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+                              SizedBox(width: 5),
+                              Icon(Icons.arrow_forward_sharp,color: Colors.black,size: 20,), // Right-side icon
                             ],
                           ),
                           style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0), // No rounded corners
                             ),
-                            backgroundColor: Colors.green,
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            backgroundColor: Colors.white,
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
                           ),
                         ),
-
-
                       ],
                     ),
                   ),
