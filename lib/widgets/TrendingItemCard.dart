@@ -22,7 +22,7 @@ class TrendingItemCard extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.black38,
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.green, width: 2),
+              border: Border.all(color: Colors.white54, width: 1),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black12,
@@ -80,8 +80,9 @@ class TrendingItemCard extends StatelessWidget {
                     Text(
                       product.title,
                       style: TextStyle(
-                          fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),
+                          fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold),
                     ),
+                    const SizedBox(height: 4),
                     Row(
                       children: [
                         StarRating(
@@ -97,7 +98,7 @@ class TrendingItemCard extends StatelessWidget {
                         Text(
                           '(${product.rating})',
                           style: const TextStyle(
-                              fontSize: 12, color: Colors.black38, fontWeight: FontWeight.bold),
+                              fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -107,13 +108,13 @@ class TrendingItemCard extends StatelessWidget {
                         Text('By Kumar',
                             style: TextStyle(
                                 fontSize: 12,
-                                color: Colors.black38,
+                                color: Colors.white,
                                 fontWeight: FontWeight.bold)),
                         Spacer(),
                         Text('500 g',
                             style: TextStyle(
                                 fontSize: 12,
-                                color: Colors.black38,
+                                color: Colors.white,
                                 fontWeight: FontWeight.bold)),
                       ],
                     ),
@@ -132,7 +133,7 @@ class TrendingItemCard extends StatelessWidget {
                           '\$29.90',
                           style: TextStyle(
                               fontSize: 12,
-                              color: Colors.black38,
+                              color: Colors.green,
                               fontWeight: FontWeight.bold,
                               decoration: TextDecoration.lineThrough),
                         ),
@@ -144,7 +145,8 @@ class TrendingItemCard extends StatelessWidget {
                             padding:
                             const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
                             shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5)),
+                                borderRadius: BorderRadius.circular(5)
+                            ),
                           ),
                           icon: Icon(Icons.shopping_cart_outlined,
                               color: Colors.white, size: 20),

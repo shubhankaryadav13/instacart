@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import '../model/ProductItem.dart';
+import 'package:instacart/view_model/header_view_model.dart';
+import 'package:provider/provider.dart';
 import '../model/instInstructionModel.dart';
 
 class instacartInstruction extends StatelessWidget {
   instacartInstruction({Key? key}) : super(key: key);
+
 
   final List<Instinstructionmodel> items = [
     Instinstructionmodel(
@@ -20,13 +22,13 @@ class instacartInstruction extends StatelessWidget {
     ),
     Instinstructionmodel(
       title: "Quality guarantee",
-      imageUrl: "assets/icons/membership.png",
+      imageUrl: "assets/icons/guarntee.png",
       bgColor: const Color(0xFF5B6840),
       rating: 2.5,
     ),
     Instinstructionmodel(
       title: "No membership fees ",
-      imageUrl: "assets/icons/quality.png",
+      imageUrl: "assets/icons/member.png",
       bgColor: const Color(0xFF5B6840),
       rating: 4.5,
     ),
@@ -37,7 +39,6 @@ class instacartInstruction extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         double itemWidth = (constraints.maxWidth - 24) / 2;
-
         return Padding(
           padding: const EdgeInsets.all(8.0),
           child: Wrap(
@@ -76,7 +77,7 @@ class instacartInstruction extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Image.asset(item.imageUrl,color: Colors.white,height: 50,width: 50,),
+              Image.asset(item.imageUrl,color: Colors.white,height: 50,width: 50),
               const SizedBox(height: 4),
               Text(
                 item.title,

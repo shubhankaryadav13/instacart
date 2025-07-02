@@ -9,6 +9,7 @@ class AppColors {
   static const Color background = Color(0xFFF0F0F0);
   static const Color textPrimary = Color(0xFF111328);
   static const Color textSecondary = Color(0xFF8D8E98);
+  static const Color skyBlue = Color(0xFFCCE4ED);
   static const Color white = Colors.white;
   static const Color black = Colors.black;
 }

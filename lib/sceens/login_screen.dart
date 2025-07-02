@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
       child: Consumer<AuthViewModel>(
         builder: (context, viewModel, child) {
           return Scaffold(
-            backgroundColor: AppColors.appColor,
+            backgroundColor: AppColors.black,
             body: Center(
               child: Padding(
                 padding: const EdgeInsets.all(16),
@@ -39,7 +39,7 @@ class LoginPage extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 35,
                             fontWeight: FontWeight.bold,
-                            color: AppColors.black,
+                            color: AppColors.white,
                           ),
                         ),
                         Text(
@@ -47,7 +47,7 @@ class LoginPage extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: AppColors.black,
+                            color: AppColors.white,
                           ),
                         ),
                         Text(
@@ -55,7 +55,7 @@ class LoginPage extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: AppColors.appColorGreen,
+                            color: AppColors.white,
                           ),
                         ),
                         SizedBox(height: 10),
@@ -95,7 +95,7 @@ class LoginPage extends StatelessWidget {
                           text: TextSpan(
                             text: 'By continuing, you agree to our ',
                             style: TextStyle(
-                              color: AppColors.black,
+                              color: AppColors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
                             ),
@@ -103,7 +103,7 @@ class LoginPage extends StatelessWidget {
                               TextSpan(
                                 text: 'Terms of Service',
                                 style: TextStyle(
-                                  color: AppColors.appColorGreen,
+                                  color: AppColors.white,
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -114,7 +114,7 @@ class LoginPage extends StatelessWidget {
                               TextSpan(
                                 text: 'Privacy Policy.',
                                 style: TextStyle(
-                                  color: AppColors.appColorGreen,
+                                  color: AppColors.white,
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -122,7 +122,7 @@ class LoginPage extends StatelessWidget {
                               TextSpan(
                                 text: 'click to register.',
                                 style: TextStyle(
-                                  color: Colors.blue,
+                                  color: Color(0xFF5B6840),
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -173,7 +173,7 @@ class LoginPage extends StatelessWidget {
                                 }
                               }
                             },
-                            color: Colors.green,
+                            color: Color(0xFF5B6840),
                             textColor: Colors.white,
                             borderRadius: 12.0,
                           ),

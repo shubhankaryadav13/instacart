@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:cuberto_bottom_bar/cuberto_bottom_bar.dart';
 import 'package:instacart/sceens/home_page.dart';
 
-import '../sceens/dashbord_another.dart'; // ensure this path is correct
+import '../sceens/categories_screen.dart';
+import '../sceens/dashbord_another.dart';
+import '../sceens/profile_screen.dart'; // ensure this path is correct
 
 class BottomBarExample extends StatefulWidget {
   @override
@@ -14,8 +16,9 @@ class _BottomBarExampleState extends State<BottomBarExample> {
 
   final List<Widget> _pages = [
     DashbordPage(),
-    DashbordAnother(),
-    Center(child: Text('Profile Page')),
+    CategoriesScreen(),
+    ProfileScreen(),
+    ProfileScreen()
   ];
 
   Future<bool> _onWillPop() async {
@@ -43,6 +46,7 @@ class _BottomBarExampleState extends State<BottomBarExample> {
           },
           tabs: [
             TabData(iconData: Icons.home, title: "Home"),
+            TabData(iconData: Icons.category, title: "Categories"),
             TabData(iconData: Icons.search, title: "Search"),
             TabData(iconData: Icons.person, title: "Profile"),
           ],

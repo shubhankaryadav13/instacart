@@ -72,7 +72,6 @@ class _DashbordPageState extends State<DashbordPage> {
               ),
               const SizedBox(height: 10),
               instacartInstruction(),
-              const HorizontalCardList(),
               const SizedBox(height: 10),
               const Text(
                 'Deals Of The Day',
@@ -84,6 +83,49 @@ class _DashbordPageState extends State<DashbordPage> {
               ),
               const SizedBox(height: 10),
               const HorizontalTrendingList(),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Text(
+                          "Save \$20 on your first order",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(height: 8), // spacing between texts
+                        Text(
+                          "Min spend \$50 valid until last 1 order",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset(
+                        'assets/images/images/vej.png',
+                        fit: BoxFit.cover, // Ensures image fills available space while keeping aspect ratio
+                      ),
+                    ),
+                  ),
+                ],
+              )
+
+
 
 
               // Add more widgets below the carousel if needed

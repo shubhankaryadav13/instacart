@@ -25,9 +25,18 @@ class CustomTextField extends StatelessWidget {
       obscureText: obscureText,
       keyboardType: keyboardType,
       validator: validator,
+      style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 16),
       decoration: InputDecoration(
         labelText: labelText,
-        border: OutlineInputBorder(),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Color(0xFF5B6840), width: 1.5),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Color(0xFF5B6840), width: 2),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        //border: OutlineInputBorder(),
         prefixIcon: prefixIcon != null ? Icon(prefixIcon) : null,
       ),
     );
